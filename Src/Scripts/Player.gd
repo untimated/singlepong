@@ -21,10 +21,10 @@ func _input(event):
 	if event is InputEventKey and event.pressed:
 		if event.scancode == KEY_A or CONTROL_STATE.A:
 			CONTROL_STATE.A = true
-			print("control : ", CONTROL_STATE)
+			# print("control : ", CONTROL_STATE)
 		if event.scancode == KEY_D or CONTROL_STATE.D: 
 			CONTROL_STATE.D = true
-			print("control : ", CONTROL_STATE)
+			# print("control : ", CONTROL_STATE)
 	if event is InputEventKey and not event.pressed:
 		if event.scancode == KEY_A:
 			CONTROL_STATE.A = false
