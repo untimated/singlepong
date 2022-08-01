@@ -1,0 +1,26 @@
+Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
+OpenGL ES 3.0 Renderer: AMD Radeon(TM) Vega 8 Mobile Graphics
+OpenGL ES Batching: ON
+ 
+ERROR: Unable to open file: res://.import/main_player.png-78a5cd46d817f9aa7f74cff6558fbae5.stex.
+   at: _load_data (scene/resources/texture.cpp:466) - Condition "!f" is true. Returned: ERR_CANT_OPEN
+ERROR: Failed loading resource: res://.import/main_player.png-78a5cd46d817f9aa7f74cff6558fbae5.stex. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: Failed loading resource: res://Assets/main_player.png. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: res://Player.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://Assets/main_player.png
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://Player.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://Assets/main_player.png
+ERROR: Failed to load resource 'res://Player.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://Player.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: res://MainGame.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://Player.tscn
+   at: poll (scene/resources/resource_format_text.cpp:412) - res://MainGame.tscn:3 - Parse Error: [ext_resource] referenced nonexistent resource at: res://Player.tscn
+ERROR: Failed to load resource 'res://MainGame.tscn'.
+   at: load (core/io/resource_loader.cpp:206) - Condition "err != OK" is true. Returned: RES()
+ERROR: Failed loading resource: res://MainGame.tscn. Make sure resources have been imported by opening the project in the editor at least once.
+   at: _load (core/io/resource_loader.cpp:270) - Condition "found" is true. Returned: RES()
+ERROR: Failed loading scene: res://MainGame.tscn
+   at: start (main/main.cpp:2011) - Condition "!scene" is true. Returned: false
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object.cpp:2064) - ObjectDB instances leaked at exit (run with --verbose for details).
