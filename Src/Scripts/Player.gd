@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 var MOVEMENT_STATE = {
-	"LEFT" : false, 
+	"LEFT" : false,
 	"RIGHT" : false,
-	"IDLE": true, 
+	"IDLE": true,
 	}
 var CONTROL_STATE = {
 	"A": false,
@@ -11,8 +11,8 @@ var CONTROL_STATE = {
 	}
 
 var speed = 4.0
-var velocity = Vector2(0.0, 0.0) 
-	
+var velocity = Vector2(0.0, 0.0)
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -42,7 +42,7 @@ func _input(event):
 	pass
 
 func process_movement() -> Vector2:
-	if MOVEMENT_STATE.LEFT: 
+	if MOVEMENT_STATE.LEFT:
 		velocity.x = -speed
 	elif MOVEMENT_STATE.RIGHT:
 		velocity.x = speed
