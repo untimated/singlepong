@@ -1,170 +1,529 @@
 Godot Engine v3.4.4.stable.official.419e713a2 - https://godotengine.org
-OpenGL ES 3.0 Renderer: AMD Radeon(TM) Vega 8 Mobile Graphics
+OpenGL ES 3.0 Renderer: Intel HD Graphics 4000 OpenGL Engine
 OpenGL ES Batching: ON
  
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:True, D:False}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:False, D:True}
-control : {A:True, D:True}
-control : {A:True, D:True}
-control : {A:True, D:False}
-control : {A:True, D:True}
+Registered camera FaceTime HD Camera (Built-in) with id 1 position 0 at index 0
+rect : (174, 24)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
+left boundary
