@@ -10,11 +10,16 @@ var CONTROL_STATE = {
 	"D": false,
 	}
 
+
 var speed = 4.0
 var velocity = Vector2(0.0, 0.0)
+var player_width = 0.0
+onready var sprite = get_node("Sprite") 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print('rect : ', sprite.get_rect().size)
+	player_width = sprite.get_rect().size.x
 	pass # Replace with function body.
 
 func _input(event):
@@ -22,7 +27,7 @@ func _input(event):
 		if event.scancode == KEY_A or CONTROL_STATE.A:
 			CONTROL_STATE.A = true
 			# print("control : ", CONTROL_STATE)
-		if event.scancode == KEY_D or CONTROL_STATE.D: 
+		if event.scancode == KEY_D or CONTROL_STATE.D:
 			CONTROL_STATE.D = true
 			# print("control : ", CONTROL_STATE)
 	if event is InputEventKey and not event.pressed:
@@ -54,7 +59,11 @@ func process_movement() -> Vector2:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	var v: Vector2 = process_movement()
-	var collision = self.move_and_collide(v)
+
+	var left_bound = self.position.x - ( player_width / 2 )
+	var right_bound = self.position.x + ( player_width / 2 )
+	if left_bound + v.x > 0 and right_bound + v.x < 800 :
+		self.move_and_collide(v)
 	pass
 
 
