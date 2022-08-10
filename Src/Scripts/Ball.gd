@@ -3,32 +3,60 @@ extends KinematicBody2D
 
 const WINDOW_WIDTH = OS.window_size.x
 const WINDOW_HEIGHT = OS.window_size.y 
+const LEFT_WALL_NORMAL = Vector2(1, 0)
+const RIGHT_WALL_NORMAL = Vector2(-1, 0)
+const TOP_WALL_NORMAL = Vector2(0, -1)
+const BOTTOM_WALL_NORMAL = Vector2(0, 1)
 
-var direction = Vector2(-1, 0)
+
+var direction = Vector2(-1, 0.5)
 var player_normal = Vector2(0,-1)
+var speed = 5
+
+onready var offset = get_node('Sprite').get_rect().size.x / 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# print('Ball Width', ball_width)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	self.move_and_collide(direction)
-	print(boundary_check(self.position))
+	var result = boundary_check(self.position)
+	direction = result.dir.normalized() * speed
+	var collision = self.move_and_collide(direction)
+	if collision : 
+		var collider = collision.collider
+		# print(collider.name)
+		if collider.name == 'Player':
+			var contact_normal = collision.normal
+			direction = direction.bounce(contact_normal)
+			# print("normal : ", collision.normal)
+			print("dir now : ", direction)
 	pass
 
 func process_movement() -> Vector2:
 	return Vector2()
 
-func boundary_check(pos: Vector2): 
-	var msg = '';
-	if pos.x > WINDOW_WIDTH : 
-		msg = "right boundary"
-	elif pos.x < 0:
-		msg = "left boundary"
-	elif pos.y > WINDOW_HEIGHT:
-		msg = "bottom boundary"
-	elif pos.y < 0:
-		msg = "top boundary"
-
-	return msg
+func boundary_check(pos: Vector2) -> Object: 
+	var resp = {"dir": Vector2(), "msg": ""} 
+	if pos.x + offset > WINDOW_WIDTH : 
+		self.position.x = WINDOW_WIDTH - offset 
+		resp.dir = direction.bounce(RIGHT_WALL_NORMAL)
+		resp.msg = "right boundary " + str(resp.dir)
+	elif pos.x - offset < 0.0:
+		print(pos)
+		self.position.x = 0.0 + offset
+		resp.dir = direction.bounce(LEFT_WALL_NORMAL)
+		resp.msg = "left boundary " + str(resp.dir)
+	elif pos.y + offset > WINDOW_HEIGHT:
+		self.position.y = WINDOW_HEIGHT - offset 
+		resp.dir = direction.bounce(BOTTOM_WALL_NORMAL)
+		resp.msg = "bottom boundary " + str(resp.dir)
+	elif pos.y - offset < 0.0:
+		self.position.y = 0.0 + offset
+		resp.dir = direction.bounce(TOP_WALL_NORMAL)
+		resp.msg = "top boundary " + str(resp.dir)
+	else:
+		resp.dir = direction
+	return resp
