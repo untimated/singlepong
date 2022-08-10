@@ -27,10 +27,15 @@ func _process(_delta):
 	var collision = self.move_and_collide(direction)
 	if collision : 
 		var collider = collision.collider
-		# print(collider.name)
+		var collider_shape = collision.collider_shape_index
+		print('collision : ', collision)
+		print('collider : ', collider.name)
+		print('collider shape : ', collision.collider_shape_index)
 		if collider.name == 'Player':
-			var contact_normal = collision.normal
-			direction = direction.bounce(contact_normal)
+			match collider_shape:
+				0 :	direction = direction.bounce(collision.normal)
+				1 :	direction = -direction
+				2 :	direction = -direction
 			# print("normal : ", collision.normal)
 			print("dir now : ", direction)
 	pass
